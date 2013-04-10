@@ -1,0 +1,707 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 22px;
+    line-height: 39px;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #000;
+    text-shadow: none;
+	color:#00ffff;
+}
+
+::selection {
+    background: #000;
+    text-shadow: none;
+	color:#00ffff;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* BASE */
+body,html{width:100%; height:100%;}
+a {text-decoration:none;}
+.center-box{margin:0 auto;}
+form{padding:0; margin:0;}
+/* NAVIGATION */
+.navMobile{position:fixed; top:0; left:0; width:100%; height:50px; background:#000; z-index:99;display:none; cursor:pointer;}
+.navigation{position:fixed; top:0; left:0; width:100%; height:50px; background:#000; z-index:98; display:block;}
+.navigation ul.userNav{float:left; list-style:none; margin:0; padding:0; width:100%; background:#000;}
+.navigation ul.userNav li{ display:block; float:left; height:50px;/*border-right:1px solid #333;*/}
+.navigation ul.userNav li a{ 
+	display:block;width:auto; height:inherit; padding:0 15px; background:#000;
+	font-family:"Droid Sans",serif; font-weight:400;line-height:50px; text-transform:uppercase; color:#FFF; font-size:12px;
+	/*animation*/
+	transition: all 0.5s;-moz-transition: all 0.5s;-webkit-transition: all 0.5s;-o-transition: all 0.5s;
+}
+.navigation ul.userNav li a.selected{background:#66d5f0;}
+.navigation ul.userNav li a:hover{ background:#66d5f0;}
+/* CONTENT */
+.wrapper{ position:relative; top:0; left:0;width:100%; overflow:hidden; background:#CCC;}
+/* BOX */
+.content-box{position:relative;width:100%; height:700px;  overflow:hidden;}
+.content-box.smartrow-1{ background:#000 url(../img/bg_welcome_low.jpg) center 0 no-repeat;}
+.content-box.smartrow-2{ background:#329ab4 /*url(../img/bg_smartCitizenKit.jpg) center no-repeat;*/}
+.content-box.smartrow-3{ background:#FFFFFF url(../img/patterns/paper_fibers.png) top left repeat;}
+.content-box.smartrow-4{ background:#42cef0 url(../img/bg_ambientSensorBoard.jpg) center no-repeat;}
+.content-box.smartrow-5{ background:#329ab4 ; }
+.content-box.smartrow-6{ background:#FFF url(../img/patterns/paper_fibers.png) top left repeat;}
+.content-box.smartrow-7{ background:#06c2f0 url(../img/bg_preOrder.png) top center no-repeat;}
+.content-box.smartrow-8{ background:#FFF url(../img/bt_contact.png) -20px 0 no-repeat; height:120px;}
+
+	.logo{position:absolute; top:100px; right:50%; width:135px; height:148px; margin-right:-70px;}
+	/* -> Headers */
+	h1,h2{
+		position:absolute;
+		display:inline-block;
+	}
+	h1{font-family:"Droid Sans",sans-serif; font-size:50px; font-weight:700; color:#FFF; text-transform:uppercase; line-height:50px;}
+	h2{font-family:'Nobile', sans-serif; font-size:18px;font-weight:400;color:#FFF;}
+		/* ROW 1 */
+		.content-box.smartrow-1 h1{top:254px;font-size: 40px; right:50%; margin-right:-176px;}
+		.content-box.smartrow-1 h2{top:334px; left:23%; width:55%; margin-right:-353px;text-align:center;}
+		.content-box.smartrow-1 h2 span{color:#00ffff;}
+		.content-box.smartrow-1 .button.aboutKit{top:454px; left:50%; margin-left:-146px;}
+		.content-box.smartrow-1 .appStore{top:540px; left:50%;margin-left:-78px;}
+		/* ROW 2 */
+		.content-box.smartrow-2 h1{top:80px; right:5%; font-size:60px;}
+		.content-box.smartrow-2 h2{top:290px; left:4%; width:330px; font-size:18px; line-height:32px; color:#c7edf6;}
+		.content-box.smartrow-2 h2 span{color:#00ffff}
+		.content-box.smartrow-2 div.arduino-icon{
+			position:relative;top:220px; left:4%; width:96px; height:66px;
+			background:url(../img/arduino-1.png) top left no-repeat;
+		}
+		.content-box.smartrow-2 .button.pre-order{top:500px; left:4%; padding:0 115px;}
+		.content-box.smartrow-2 .video{position:absolute; top:205px; left:39%;width:684px; height:384px; background:#000; border:15px solid #FFF; border-radius:6px;}
+		/* ROW 3 */
+		.content-box.smartrow-3 h1{top:63px; left:50px; font-size:60px; color:#66d5f0;}
+		.content-box.smartrow-3 ul{position:absolute;list-style:none; width:50%;top:190px; left:62px;  z-index:2; margin:0; padding:0;}
+		.content-box.smartrow-3 ul li{float:left;margin:0 81px 30px 0;width:126px; display:block; height:170px;font-family:"Nobile", sans-serif; font-size:13px; font-weight:400; color:#329ab4; text-align:center; line-height:21px;}
+			.content-box.smartrow-3 ul li img{width:100%; margin-bottom:8px; clear:both;}
+			.content-box.smartrow-3 .board{position:absolute;float:left;width:381px; top:90px; left:58%; }
+			.content-box.smartrow-3 .board img{width:100%;}
+		/* ROW 4 */
+		.content-box.smartrow-4 h1{top:80px; left:50%; font-size:40px; color:#0592b4; width:605px; text-align:center; margin-left:-297px;text-shadow: 0px 2px #8ce2f9;}
+		.content-box.smartrow-4 h2{bottom:135px; left:350px; font-size:16px; width:886px; line-height:28px;}
+		.content-box.smartrow-4 h2 span{color:#0592b4;}
+		.content-box.smartrow-4 .button.pre-order{bottom: 69px;left: 70px;padding: 0 64px;}
+		.content-box.smartrow-4 .sensorBoardIcons{position:absolute; top:250px; width:100%;}
+			.content-box.smartrow-4 .sensorBoardIcons img{width:100%;}
+		.content-box.smartrow-4 .temperature{ 
+		font-family: "Droid Sans", sans-serif;font-size: 100px;color: #FFF;font-weight: 700;
+		position: absolute;bottom: 170px;left: 128px;}
+		/* ROW 5 */
+		.content-box.smartrow-5 div.columnized{}
+			.content-box.smartrow-5 div.columnized div{position:relative;float:left;width:50%;background:#8ee2f6;height:440px;}
+			.content-box.smartrow-5 div.columnized div.socialData{ background:#8ee2f6;}
+			.content-box.smartrow-5 div.columnized div.openSource{ background:#329ab4;}
+			.content-box.smartrow-5 div.columnized h1{
+				top:70px;font-size:30px; text-align:center; width:100%;	
+			}
+			.content-box.smartrow-5 div.columnized h2{
+				width:485px; top: 150px; left:50%;  margin-left:-240px;
+				font-size:18px; line-height:32px; text-align:center; color:#309db8;
+			}
+			.content-box.smartrow-5 div.columnized div.socialData h1{color:#0592b4}
+			.content-box.smartrow-5 div.columnized div.openSource h2{color:#85ddf3;}
+			.content-box.smartrow-5 div.columnized div.socialData h2 span{color:#336b78;}
+			.content-box.smartrow-5 div.columnized div.openSource h2 span{color:#FFF;}
+			.content-box.smartrow-5 .footer{float:none;position:absolute;bottom:0;width:100%;height:260px;background:#f1f1f1;}
+				.content-box.smartrow-5 .footer ul{position:absolute;  top:40px; left:50%; margin:0; padding:0; list-style:none; margin-left:-560px;}
+				.content-box.smartrow-5 .footer ul li{float:left;display:block; width:162px; /*height:129px;*/ margin-left:20px; margin-top:10px;}
+				.content-box.smartrow-5 .footer ul li a{display:block; width:inherit; height:inherit;}
+				.content-box.smartrow-5 .footer ul li a img{width:100%;}
+		/* ROW 6 */
+		.content-box.smartrow-6 h1{top:150px; right:120px; color:#06c2f0; font-size:80px;}	
+		.content-box.smartrow-6 h2{top:270px; right:220px; width:370px; color:#666; font-size:18px; line-height:28px;}
+		.content-box.smartrow-6 .appStore{top:410px; right:435px;}
+		.content-box.smartrow-6 .mobile{position: absolute;bottom: 0;left:10%;width: 354px;}
+		.content-box.smartrow-6 .mobile img{width:100%;}
+		/* ROW 7 */
+		.content-box.smartrow-7 h1{top:65px; left:50px; color:#FFF; font-size:70px;}	
+		.content-box.smartrow-7 h2{
+			top: 90px;right: 50px;width: 510px;
+			color: #FFF;font-size: 28px;line-height: 38px;text-align: right;}
+		.content-box.smartrow-7 h2 span{color:#0592b4;}
+		.content-box.smartrow-7 .appStore{top:410px; right:435px;}
+		.content-box.smartrow-7 .orderNow{bottom:183px; right:50px;}
+		.content-box.smartrow-7 .price, .content-box.smartrow-7 .title{
+			position: absolute;bottom: 275px;right: 50px;
+			font-family:"Driod Sans", sans-serif;font-size: 65px; font-weight:700;color: #FFF;text-align: right;}
+		.content-box.smartrow-7 .title{bottom: 332px; font-size:25px; font-weight:400; color:#b3ebf9; text-transform:uppercase;}
+		.content-box.smartrow-7 .paypal{position: absolute;bottom: 60px;right: 50px;background: #b3ebf9;width: 253px;height: 76px;border-radius: 4px;text-align: center;}
+		/* ROW 8 - CONTACT */
+		.content-box.smartrow-8 h2{font-size:16px; color:#4d4d4d; top:36px; left:114px; line-height:23px;}
+		.content-box.smartrow-8 h2 a{color:#06c2f0; text-decoration:underline;}
+		.content-box.smartrow-8 h2 a:hover{color:#0592b4;}
+		
+		
+/* FOOTER */
+.footerEnd{ background:#000; height:80px;position:relative;}
+.footerEnd .copyright{color:#FFF; font-size:16px; position:absolute; top:20px; left:20px;}
+.footerEnd ul{position:absolute;top:18px; left:50%; width:580px;  list-style:none; margin:0; padding:0; margin-left:-285px;}
+.footerEnd ul li{float:left; display:block;  border-rigth:1px solid #FFF;}
+.footerEnd ul li a{padding:0 20px;}
+.footerEnd .humantxt{position:absolute; right:20px; top:15px;}
+ footerEnd .humantxt a{}
+/* BUTTONS */
+.button{
+	position: absolute;
+	padding:0 30px; height:50px; background:#06c2f0;
+	font-family:"Droid Sans", serif; font-size:15px;line-height:50px; color:#FFF; text-transform:uppercase; text-align:center;
+	border-radius:4px;
+}
+.button:hover{
+	background:#FFF;
+	color:#06c2f0;
+	cursor:pointer;
+}
+.button.orderNow{background:#0592b4; }
+.button.orderNow:hover{background:#FFF; }
+.button.aboutKit{background:#0592b4;}
+.button.aboutKit:hover{background:#FFF;color:#0592b4;}
+.appStore{
+	position:absolute;width:154px; height:50px;
+	background:url(../img/appStore-1.png) 0 -50px no-repeat; 
+}
+.appStore:hover{background-position:0 -50px; cursor:pointer;}
+.appStore.black{background-position:0 50;}
+.appStore.black:hover{background-position:0 0px;}
+/*.button.pre-order{
+	background:#06c2f0;
+}*/
+
+/* FOOTER */
+.footer{ position:relative;width:100%; background:#000; height:120px;}
+
+
+/* UI BUTTONS */
+.arrowDown{
+	position:absolute; bottom:0; right:50%; width:60px; height:60px;margin-right:-30px; z-index:98;
+	 background: url(../img/downButton.png) 0 0 no-repeat;
+	 border-radius:6px 6px 0 0;
+}
+.arrowDown:hover{ cursor:pointer;}
+.arrowDown-1{ background-position:0 0;}
+.arrowDown-2{ background-position:-60px 0;}
+.arrowDown-3{ background-position:-120px 0;}
+.arrowDown-4{ background-position: -180px 0;}
+/* SOCIAL CONNECTIONS */
+.socialBox{position:absolute;padding:0 20px; background:#FFF; border-radius:4px 4px 0 0; z-index:97;}
+.socialBox div{float:left; margin-right:5px;}
+.socialBox div:last{margin:0;}
+	.socialBox.box-1 {bottom:0; left:50%; margin-left:-139px;}
+	.socialBox div.twitter{margin-top:5px; width:72px;}
+	.socialBox div.google{margin:5px -30px 0 10px;}
+/* ----------------- */
+/* CSS3 TRICKS */
+.anima-1{
+  /*animation*/
+  transition: all 0.5s;
+  -moz-transition: all 0.5s; /* Firefox 4 */
+  -webkit-transition: all 0.5s; /* Safari and Chrome */
+  -o-transition: all 0.5s; /* Opera */
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+	h2 {
+		font-family: 'Nobile', sans-serif;font-size: 14px;font-weight: 400;color: #FFF;line-height: 28px;
+	}
+	.navigation{top:-150px;}
+	.navMobile{display:block;}
+		.navMobile .title{
+			font-family:"Droid Sans", sans-serif; font-size:12px; text-transform:uppercase; color:#fff;
+			float:left; margin: 5px 0 0 50px;}
+	.navigation ul.userNav li a{ font-size:12px;}
+	/* ROW 1 */
+		.content-box.smartrow-1 h1{top:254px;font-size: 30px; left:0; width:100%; text-align:center;}
+		.content-box.smartrow-1 h2{top:317px; left:2%; width:96%; text-align:center;}
+		
+	/* ROW 2 */
+	.content-box.smartrow-2 h1{top:80px; right:0; font-size:30px; width:100%; text-align:center;}
+	.content-box.smartrow-2 h2{top:345px; left:10%; width:80%; font-size:14px; line-height:28px; color:#c7edf6;}
+	.content-box.smartrow-2 h2 span{color:#00ffff}
+	.content-box.smartrow-2 div.arduino-icon{display:none;}
+	.content-box.smartrow-2 .button.pre-order{top:530px; left:7%; padding:0 85px;}
+	.content-box.smartrow-2 .video{position:absolute; top:165px; left:6%;width:84%; height:160px; background:#000; border:6px solid #FFF; margin:0 auto; border-radius:4px;}
+	/* ROW 3 */
+	.content-box.smartrow-3 {height:890px;}
+	.content-box.smartrow-3 h1 {top: 45px;left: 0;font-size: 40px;z-index: 2;width: 100%;text-align: center;}
+	.content-box.smartrow-3 ul {width:100%; left:0px; top:190px;}
+	.content-box.smartrow-3 ul li{margin:0 0 30px 24px;width:126px;}
+	.content-box.smartrow-3 .board{display:none;}
+	/* ROW 4 */
+	.content-box.smartrow-4{height:880px;}
+	.content-box.smartrow-4 h1 {
+		top: 80px;left: 0;font-size: 27px;width: 100%;margin-left: 0;line-height: 40px;}
+	.content-box.smartrow-4 h2 {bottom: 145px;left: 7%;width: 87%; margin:0; font-size:13px; line-height:32px;}
+	.content-box.smartrow-4 .sensorBoardIcons, .content-box.smartrow-4 .temperature{display:none;}
+	.content-box.smartrow-4{ background:#42cef0 url(../img/bg_Mobile_Features.png) center top no-repeat;}
+	.content-box.smartrow-4 .button.pre-order {bottom:76px;left: 17px;padding: 0 90px;}
+	/* ROW 5 */
+	.content-box.smartrow-5{height:900px;}
+	.content-box.smartrow-5 div.columnized h1 {font-size:30px;}
+	.content-box.smartrow-5 div.columnized h2{
+		width: 90%;top: 120px;left: 17px;padding: 0;margin: 20px 0;
+		font-size: 13px;line-height: 32px;text-align: center;}
+	.content-box.smartrow-5 div.columnized div {position: relative;float: none;width: 100%;height: 340px;}
+	.content-box.smartrow-5 .footer{}
+	.content-box.smartrow-5 .footer ul {margin:0;top: 9px;left: 0;margin: 0;padding: 0; }
+	.content-box.smartrow-5 .footer ul li{ width:100px; margin-left:0;}
+	/* ROW 6 */
+	.content-box.smartrow-6 h1 {top: 73px;right: 0px;font-size: 40px; width:100%; text-align:center;}
+	.content-box.smartrow-6 h2 {top: 150px;right: 15px;width: 290px;font-size: 16px;line-height: 28px;text-align: center;}
+	.content-box.smartrow-6 .mobile{bottom: -89px;left: 8%;width: 264px;}
+	.content-box.smartrow-6 .appStore {top: 262px;right: 83px;}
+	/* ROW 7 */
+	.content-box.smartrow-7{ background:#06c2f0 url(../img/bg_Mobile_Order.png) top center no-repeat;}
+	.content-box.smartrow-7 h1 {left: 20px;font-size: 50px;}
+	.content-box.smartrow-7 h2 {top: 142px;right: 29px;width: 83%;color: #FFF;font-size: 14px;line-height: 26px;text-align: center;}
+	.content-box.smartrow-7 .price, .content-box.smartrow-7 .title{
+		bottom: 399px;right: 108px;font-size: 45px;
+	}
+	.content-box.smartrow-7 .title {bottom: 441px;font-size: 20px;right: 70px;}
+	.content-box.smartrow-7 .orderNow {bottom: 143px;right: 22px;padding: 0;}
+	.content-box.smartrow-7 .paypal {bottom: 39px;right: 22px;width: 276px;}
+	/* ROW  8 */
+	.content-box.smartrow-8 h2 {font-size: 12px;top: 20px;left: 109px;line-height: 23px;width: 195px;}
+	
+	/* FOOTER */
+	.footerEnd {height: 150px;}
+	.footerEnd ul {top: 12px;left: 4px;width: 100%;margin-left: 0;}
+	.footerEnd ul li a {padding: 0 10px;}
+	.footerEnd .copyright {top: 100px;}
+	.footerEnd .humantxt {top: 96px;}
+}
+/* ----------------------------------- */
+/* Smartphones (landscape) ----------- */
+/* ----------------------------------- */
+
+@media only screen 
+and (min-width : 321px) and (max-width : 767px) {
+	h2 {
+		font-family: 'Nobile', sans-serif;font-size: 14px;font-weight: 400;color: #FFF;line-height: 28px;
+	}
+	.navigation{top:-150px;}
+	.navMobile{display:block;}
+		.navMobile .title{
+			font-family:"Droid Sans", sans-serif; font-size:12px; text-transform:uppercase; color:#fff;
+			float:left; margin: 5px 0 0 50px;}
+	.navigation ul.userNav li a{ font-size:12px;}
+	/* ROW 1 */
+		.content-box.smartrow-1 h1{top:254px;font-size: 30px; left:0; width:100%; text-align:center;}
+		.content-box.smartrow-1 h2{top:317px; left:2%; width:96%; text-align:center;}
+		
+	/* ROW 2 */
+	.content-box.smartrow-2 h1{top:80px; right:0; font-size:30px; width:100%; text-align:center;}
+	.content-box.smartrow-2 h2{top:394px; left:10%; width:80%; font-size:14px; line-height:31px; color:#c7edf6;}
+	.content-box.smartrow-2 h2 span{color:#00ffff}
+	.content-box.smartrow-2 div.arduino-icon{display:none;}
+	.content-box.smartrow-2 .button.pre-order{top:541px; left:25%; padding:0 65px;}
+	.content-box.smartrow-2 .video{position:absolute; top:165px; left:10%;width:77%; height:210px; background:#000; border:6px solid #FFF; margin:0 auto; border-radius:4px;}
+	/* ROW 3 */
+	.content-box.smartrow-3 {height:660px;}
+	.content-box.smartrow-3 h1 {top: 45px;left: 0;font-size: 40px;z-index: 2;width: 100%;text-align: center;}
+	.content-box.smartrow-3 ul {width:100%; left:0px; top:190px;}
+	.content-box.smartrow-3 ul li{margin:0 0 30px 24px;width:126px;}
+	.content-box.smartrow-3 .board{display:none;}
+	/* ROW 4 */
+	.content-box.smartrow-4{ height:750px; background:#42cef0 url(../img/bg_Mobile480_Features.png) top center no-repeat;}
+	.content-box.smartrow-4 h1 {
+		top: 105px;left: 0;font-size: 27px;width: 100%;margin-left: 0;line-height: 40px;}
+	.content-box.smartrow-4 h2 {bottom: 159px;left: 5%;width: 90%; margin:0;margin:0; font-size:13px; line-height:32px;}
+	.content-box.smartrow-4 .sensorBoardIcons, .content-box.smartrow-4 .temperature{display:none;}
+	
+	.content-box.smartrow-4 .button.pre-order {bottom:87px;left: 97px;padding: 0 90px;}
+	/* ROW 5 */
+	.content-box.smartrow-5{height:720px;}
+	.content-box.smartrow-5 div.columnized h1 {font-size:30px;}
+	.content-box.smartrow-5 div.columnized h2{
+		width: 90%;top: 120px;left: 17px;padding: 0;margin: 20px 0;
+		font-size: 13px;line-height: 32px;text-align: center;}
+	.content-box.smartrow-5 div.columnized div {position: relative;float: none;width: 100%;height: 290px;}
+	.content-box.smartrow-5 .footer{ height:140px;}
+	.content-box.smartrow-5 .footer ul {margin:0;top: 9px;left: 0;margin: 0;padding: 0; }
+	.content-box.smartrow-5 .footer ul li{ width:76px; margin-left:0;}
+	/* ROW 6 */
+	.content-box.smartrow-6 h1 {top: 73px;right: 0px;font-size: 40px; width:100%; text-align:center;}
+	.content-box.smartrow-6 h2 {top: 150px;right: 33px;width: 86%;font-size: 16px;line-height: 28px;text-align: center;}
+	.content-box.smartrow-6 .mobile{bottom: -89px;left: 22%;width: 264px;}
+	.content-box.smartrow-6 .appStore {top: 242px;right: 158px;}
+	/* ROW 7 */
+	.content-box.smartrow-7{ background:#06c2f0 url(../img/bg_Mobile_Order.png) top center no-repeat;}
+	.content-box.smartrow-7 h1 {left: 20px;font-size: 50px;}
+	.content-box.smartrow-7 h2 {top: 142px;right: 59px;width: 83%;color: #FFF;font-size: 14px;line-height: 26px;text-align: left;}
+	.content-box.smartrow-7 .price, .content-box.smartrow-7 .title{
+		bottom: 399px;right: 176px;font-size: 45px;
+	}
+	.content-box.smartrow-7 .title {bottom: 441px;font-size: 20px;right: 143px;}
+	.content-box.smartrow-7 .orderNow {bottom: 143px;right: 106px;padding: 0;}
+	.content-box.smartrow-7 .paypal {bottom: 39px;right: 102px;width: 276px;}
+	/* ROW  8 */
+	.content-box.smartrow-8 h2 {font-size: 14px;top: 20px;left: 109px;line-height: 28px;width: 345px;}
+	
+	/* FOOTER */
+	.footerEnd {height: 100px;}
+	.footerEnd ul {top: 12px;left: 4px;width: 100%;margin-left: 0;}
+	.footerEnd ul li a {padding: 0 10px;}
+	.footerEnd .copyright {top: 52px;}
+	.footerEnd .humantxt {top: 48px;}
+}
+/* ----------------------------------- */
+/* TableTS (portrait) ----------- */
+/* ----------------------------------- */
+@media only screen 
+and (min-width : 768px)  and (max-width : 1023px){
+	h2 {
+		font-family: 'Nobile', sans-serif;font-size: 14px;font-weight: 400;color: #FFF;line-height: 28px;
+	}
+	.navigation{top:-150px;}
+	.navMobile{display:block;}
+		.navMobile .title{
+			font-family:"Droid Sans", sans-serif; font-size:12px; text-transform:uppercase; color:#fff;
+			float:left; margin: 5px 0 0 50px;}
+	.navigation ul.userNav li a{ font-size:13px;}
+	/* ROW 1 */
+		.content-box.smartrow-1{ background:#000 url(../img/bg_welcome.jpg) center 0 no-repeat;}
+		.content-box.smartrow-1{height:962px;}
+		.content-box.smartrow-1 h1{top:254px;font-size: 35px; left:0; width:100%; text-align:center;}
+		.content-box.smartrow-1 h2{top:319px; left:16%; width:66%; text-align:center;}
+		.content-box.smartrow-1 .button.aboutKit{top:423px;}
+		/* ROW 2 */
+		.content-box.smartrow-2{ height:800px;}
+		.content-box.smartrow-2 h1{top:72px; right:0; font-size:35px; width:100%; text-align:center;}
+		.content-box.smartrow-2 h2 {top: 551px;left: 6%;width: 46%;font-size: 14px;line-height: 28px;color: #c7edf6;}
+		.content-box.smartrow-2 h2 span{color:#00ffff}
+		.content-box.smartrow-2 div.arduino-icon{display:none;}
+		.content-box.smartrow-2 .button.pre-order{top:570px; left:56%; padding:0 85px;}
+		.content-box.smartrow-2 .video{position:absolute; top:165px; left:6%;width:84%; height:360px; background:#000; border:6px solid #FFF; margin:0 auto; border-radius:4px;}
+		/* ROW 3 */
+		.content-box.smartrow-3 {height:670px;}
+		.content-box.smartrow-3 h1 {top: 45px;left: 0;font-size: 40px;z-index: 2;width: 100%;text-align: center;}
+		.content-box.smartrow-3 ul {width:70%; left:0px; top:164px;}
+		.content-box.smartrow-3 ul li{margin:0 0 30px 24px;width:126px;}
+		.content-box.smartrow-3 .board{display:block; width: 261px;top: 150px;left: 64%;}
+		/* ROW 4 */
+		.content-box.smartrow-4 h2{bottom: 170px;left: 230px;font-size: 16px;width: 529px;line-height: 32px;}
+		.content-box.smartrow-4 .button.pre-order{bottom: 93px;left: 225px;padding: 0 105px;}
+		.content-box.smartrow-4 .temperature{bottom: 250px;left: 35px;}
+		/* ROW 5 */
+		.content-box.smartrow-5{ height:582px;}
+		.content-box.smartrow-5 div.columnized h1{font-size: 25px;}
+		.content-box.smartrow-5 div.columnized h2{width: 295px;top: 150px;left: 38px;margin-left: 0;font-size: 16px;line-height: 32px;text-align: center;color: #309db8;}
+		.content-box.smartrow-5 .footer ul{top: 40px;left: 0;margin: 0;padding: 0;list-style: none;margin-left: 0;}
+		.content-box.smartrow-5 .footer ul li{width: 100px;}
+		.content-box.smartrow-5 .footer{height: 200px;}
+		/* ROW 6 */
+		
+		.content-box.smartrow-6 h1 {top: 76px;right: 0px;font-size: 50px; width:100%; text-align:center;}
+		.content-box.smartrow-6 h2 {top: 237px;right: 29px;width: 300px;font-size: 16px;line-height: 28px;text-align: left;}
+		.content-box.smartrow-6 .mobile{bottom: -89px;left: 5%;width: 338px;}
+		.content-box.smartrow-6 .appStore {top: 410px;right: 174px;}
+		/* ROW 7 */
+		.content-box.smartrow-7{ height:610px;}
+		.content-box.smartrow-7{ background:#06c2f0 url(../img/bg_iPad_Order.png) top center no-repeat;}
+		.content-box.smartrow-7 h1 {left: 20px;font-size: 50px;}
+		.content-box.smartrow-7 h2 {top: 82px;right: 24px;width: 83%;color: #FFF;font-size: 20px;line-height: 30px;text-align: right;}
+		.content-box.smartrow-7 .price, .content-box.smartrow-7 .title{
+			bottom: 277px;right: 31px;font-size: 55px;
+		}
+		.content-box.smartrow-7 .title {bottom: 332px;font-size: 22px;right: 30px;}
+		.content-box.smartrow-7 .orderNow {bottom: 187px;right: 22px;padding: 0;}
+		.content-box.smartrow-7 .paypal {bottom: 98px;right: 22px;width: 276px;}
+		/* ROW  8 */
+		.content-box.smartrow-8 h2 {font-size: 14px;top: 38px;left: 109px;line-height: 23px;width: 635px;}
+		
+		/* FOOTER */
+		.footerEnd {height: 110px;}
+		.footerEnd ul {top: 12px;left: 4px;width: 100%;margin-left: 0;}
+		.footerEnd ul li a {padding: 0 10px;}
+		.footerEnd .copyright {top: 60px;}
+		.footerEnd .humantxt {top: 51px;}
+}
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-width : 1024px) and (max-width : 1025px){
+	/* ROW 2 */
+	.content-box.smartrow-2 .video{ width:564px; height:315px;}
+	/* ROW 3 */
+	.content-box.smartrow-3 ul { width:70%;}
+	.content-box.smartrow-3 .board{width: 321px;top: 140px;left: 63%;}
+	/* ROW 4 */
+	.content-box.smartrow-4 h2{width: 646px;}
+	/* ROW5 */
+	.content-box.smartrow-5 div.columnized h2{width: 425px;left: 57%;}
+	.content-box.smartrow-5 .footer ul{margin-left: -474px;}
+	.content-box.smartrow-5 .footer ul li{width: 134px;}
+	/* ROW 6*/
+	.content-box.smartrow-6 h1{right:107px;font-size: 60px;}
+	.content-box.smartrow-6 h2{ right:90px;}
+	.content-box.smartrow-6 .appStore{right: 307px;}
+}
+
+
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
