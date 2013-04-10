@@ -2,14 +2,26 @@
 # The humans responsible & technology colophon
 
 # TEAM
+- Tomas Diez, co-founder, project integration, strategic planning 
+- Alex Posada, co-founder, project hardware design and developer
+- Guillem Camprodon, integration and project development (h&s)
+- M.A. Heras, hardware designer and developer
+- Alex Dubor, first platform design, programming and development
+- Leonardo Arrata, platform and mobile app design and development
+- Xavier Vinaixa, platform API development, mobile app development
+- Gabriel Bello-Diaz, first platform design
+- Francisco Zabala, USA development partner
+- Alejandro Abreu, documentation and project revision
 
-    <name> -- <role> -- <twitter>
 
 # THANKS
 
-    <name>
+    Fablab Barcelona
+	Iaac, Instituto de Arquitectura Avanzada de Catalunya
+	MID - Media Interactive Design
+	Hangar
+	Goteo
 
 # TECHNOLOGY COLOPHON
 
-    HTML5, CSS3
-    Normalize.css, jQuery, Modernizr
+    https://github.com/fablabbcn/SmartCitizen.me
