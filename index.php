@@ -157,6 +157,10 @@
             <div class="content-box smartrow-8 contact-icon">
             	<h2>If you want to organize a Smart Citizen Workshop please write us to: <a href="mailto:info@smartcitizen.me">info@smartcitizen.me</a></h2>
             </div>
+            <!-- KICK STARTER -->
+            <div class="content-box smartrow-9">
+            	<h1>in Kickstarter in May</h1>
+            </div>
             <!-- FOOTER -->
             <div class="footerEnd">
             	<div class="copyright">Smart Citizen &copy; 2013</div>

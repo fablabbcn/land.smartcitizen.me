@@ -209,6 +209,9 @@ form{padding:0; margin:0;}
 		.content-box.smartrow-8 h2{font-size:16px; color:#4d4d4d; top:36px; left:114px; line-height:23px;}
 		.content-box.smartrow-8 h2 a{color:#06c2f0; text-decoration:underline;}
 		.content-box.smartrow-8 h2 a:hover{color:#0592b4;}
+		/* ROW 9 */
+		.content-box.smartrow-9{height:120px; background:url(../img/patterns/paper_fibers_@2X.png) 0 0 repeat;}
+		.content-box.smartrow-9  h1{top:0;left:0px; height:inherit;width:100%; text-align:center;color:#4d4d4d; font-size:50px;}
 		
 		
 /* FOOTER */
@@ -450,6 +453,8 @@ and (max-width : 320px) {
 	.content-box.smartrow-7 .paypal {bottom: 39px;right: 22px;width: 276px;}
 	/* ROW  8 */
 	.content-box.smartrow-8 h2 {font-size: 12px;top: 20px;left: 109px;line-height: 23px;width: 195px;}
+	/* ROW 9 */
+		.content-box.smartrow-9  h1{font-size:20px;}
 	
 	/* FOOTER */
 	.footerEnd {height: 150px;}
@@ -525,6 +530,8 @@ and (min-width : 321px) and (max-width : 767px) {
 	.content-box.smartrow-7 .paypal {bottom: 39px;right: 102px;width: 276px;}
 	/* ROW  8 */
 	.content-box.smartrow-8 h2 {font-size: 14px;top: 20px;left: 109px;line-height: 28px;width: 345px;}
+	/* ROW 9 */
+		.content-box.smartrow-9  h1{font-size:20px;}
 	
 	/* FOOTER */
 	.footerEnd {height: 100px;}
