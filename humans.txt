@@ -25,3 +25,4 @@
 # TECHNOLOGY COLOPHON
 
     https://github.com/fablabbcn/SmartCitizen.me
+	OpenStreetMap, Leaflet, Raphaël, jQuery, CakePHP, and many more..
