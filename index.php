@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Smart Citizen a</title>
+        <title>Smart Citizen</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=1, minimum-scale=1.0, maximum-scale=1.0">
 
@@ -126,7 +126,7 @@
                             	<img src="img/social/asset_facebook.png">
                             </a>
                         </li>
-                        <li><a href="#"><img src="img/social/asset_twitter.png"></a></li>
+                        <li><a href="http://twitter.com/fablabbcn" target="_blank"><img src="img/social/asset_twitter.png"></a></li>
                         <li><a href="#" ><img src="img/social/asset_google.png"></a></li>
                         <li><a href="https://github.com/fablabbcn/Smart-Citizen-Kit" target="_blank" ><img src="img/social/asset_gihub.png"></a></li>
                         <li><a href="http://freedomdefined.org/OSHW" target="_blank" ><img src="img/social/asset_openHardware.png"></a></li>
